@@ -1,0 +1,39 @@
+{
+  "users": [
+    {
+      "id": 101,
+      "name": "Alita",
+      "surname": "Doe",
+      "age": 25,
+      "salary": 500000
+    },
+    {
+      "id": 102,
+      "name": "Kuro",
+      "surname": "Smith",
+      "age": 30,
+      "salary": 600000
+    },
+    {
+      "id": 103,
+      "name": "Kenshi",
+      "surname": "Johnson",
+      "age": 28,
+      "salary": 550000
+    },
+    {
+      "id": 104,
+      "name": "Renzou",
+      "surname": "Williams",
+      "age": 32,
+      "salary": 620000
+    },
+    {
+      "id": 105,
+      "name": "Tatsuya",
+      "surname": "Brown",
+      "age": 29,
+      "salary": 580000
+    }
+  ]
+}

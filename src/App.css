@@ -1,0 +1,261 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+}
+
+body {
+  background-color: #121212;
+  color: #e0e0e0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #1f1f1f;
+  padding: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.nav-link {
+  color: #e0e0e0;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.nav-link:hover {
+  background-color: #333;
+}
+
+/* Content styles */
+.content {
+  padding: 20px;
+  background-color: #1f1f1f;
+  min-height: 80vh;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
+  margin: 20px;
+}
+
+/* Button styles */
+button {
+  background-color: #333;
+  color: #e0e0e0;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+h3 {
+  color: #e0e0e0;
+}
+
+form {
+  background-color: #1f1f1f;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  max-width: 400px;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+label {
+  color: #e0e0e0;
+  margin-bottom: 5px;
+}
+
+input {
+  padding: 10px;
+  border: 1px solid #333;
+  border-radius: 5px;
+  background-color: #2b2b2b;
+  color: #e0e0e0;
+  width: 100%;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #555;
+  outline: none;
+}
+
+input.error {
+  border-color: #ff4d4d;
+}
+
+button {
+  background-color: #333;
+  color: #e0e0e0;
+  border: none;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+span {
+  color: #ff4d4d;
+  font-size: 0.875rem;
+  margin-top: -10px;
+}
+
+h3 {
+  color: #e0e0e0;
+  text-align: center;
+}
+/*----------USer - List ----------- */
+
+/* Контейнер для списка */
+.user-list {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #1f1f1f;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Заголовок списка */
+.user-list h3 {
+  color: #e0e0e0;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Элементы списка */
+.user-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  background-color: #2b2b2b;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+/* Стили для имени и фамилии */
+.user-item p {
+  margin: 0;
+  color: #e0e0e0;
+}
+
+/* Контейнер для кнопок */
+.user-item div {
+  display: flex;
+  gap: 10px;
+}
+
+/* Общие стили для кнопок Edit и Delete */
+.user-item a, .user-item button {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+  border: none;
+  cursor: pointer;
+}
+
+/* Анимация при наведении: плавное увеличение */
+.user-item a:hover, .user-item button:hover {
+  transform: scale(1.1); /* Увеличиваем размер кнопки при наведении */
+}
+
+/* Кнопка Edit */
+.user-item a {
+  background-color: #4CAF50;
+}
+
+.user-item a:hover {
+  background-color: #45a049;
+}
+
+/* Кнопка Delete */
+.user-item button {
+  background-color: #e74c3c;
+}
+
+.user-item button:hover {
+  background-color: #c0392b;
+}
+
+/* Ссылка для добавления пользователя */
+.add-user-link {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  color: #e0e0e0;
+  text-decoration: none;
+  font-size: 1.1rem;
+  font-weight: bold;
+  padding: 10px;
+  background-color: #333;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+/* Анимация при наведении для добавления пользователя */
+.add-user-link:hover {
+  background-color: #555;
+  transform: scale(1.05); /* Плавное увеличение кнопки при наведении */
+}
